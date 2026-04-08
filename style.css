@@ -1,6 +1,6 @@
 :root {
-    --bg-gradient-start: #0f172a;
-    --bg-gradient-end: #1e1b4b;
+    --bg-gradient-start: #1e3a8a;
+    --bg-gradient-end: #3b82f6;
     --glass-bg: rgba(255, 255, 255, 0.05);
     --glass-border: rgba(255, 255, 255, 0.1);
     --glass-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
@@ -19,7 +19,7 @@
 }
 
 body {
-    font-family: 'Outfit', sans-serif;
+    font-family: 'Poppins', sans-serif;
     background: linear-gradient(135deg, var(--bg-gradient-start), var(--bg-gradient-end));
     color: var(--text-primary);
     min-height: 100vh;
