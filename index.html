@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Task Master</title>
+    <meta name="description" content="A premium, simple to-do application using Vanilla JS.">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="app-container">
+        <header class="app-header">
+            <h1>Task Master</h1>
+            <p>Get things done, smoothly.</p>
+        </header>
+        
+        <section class="input-section">
+            <form id="todo-form">
+                <input type="text" id="todo-input" placeholder="What needs to be done?" autocomplete="off" required>
+                <button type="submit" id="add-btn" aria-label="Add Task">
+                    <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="12" y1="5" x2="12" y2="19"></line>
+                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                    </svg>
+                </button>
+            </form>
+        </section>
+
+        <section class="list-section">
+            <ul id="todo-list">
+                <!-- Dynamically populated items -->
+            </ul>
+            <div id="empty-state" class="empty-state hidden">
+                <p>All caught up! 🎉</p>
+            </div>
+        </section>
+        
+        <footer class="app-footer">
+            <span id="task-count">0 tasks left</span>
+            <button id="clear-completed" class="hidden">Clear Completed</button>
+        </footer>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
